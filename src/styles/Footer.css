@@ -1,0 +1,72 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: linear-gradient(135deg, #b2e0e4, #8fcddc); /* soft blue-green gradient */
+  color: #ffffff;
+  padding: 25px 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== FOOTER CONTAINER ===== */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* ===== FOOTER SECTIONS ===== */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffd700; /* gold accent */
+}
+
+.footer-section p,
+.footer-section a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #ffd700;
+}
+
+/* ===== SOCIAL ICONS ===== */
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #ffffff;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffd700;
+}
+
+/* ===== COPYRIGHT ===== */
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background: linear-gradient(90deg, #a8dadc, #77c9d4); /* soft light blue → mint gradient */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 65px;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+}
+
+.nav-btn {
+  background: #ffd700;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.nav-btn:hover {
+  background: #e6c200;
+}
