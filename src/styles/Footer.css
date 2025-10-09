@@ -1,72 +1,94 @@
-/* ===== FOOTER ===== */
 .footer {
-  background: linear-gradient(135deg, #b2e0e4, #8fcddc); /* soft blue-green gradient */
-  color: #ffffff;
-  padding: 25px 50px;
+  background: rgba(34, 32, 52, 0.85);
+  backdrop-filter: blur(10px);
+  color: #f1f1f1;
+  padding: 60px 10%;
+  box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   font-family: 'Poppins', sans-serif;
 }
 
-/* ===== FOOTER CONTAINER ===== */
 .footer-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-/* ===== FOOTER SECTIONS ===== */
 .footer-section {
   flex: 1;
-  min-width: 200px;
+  min-width: 250px;
+}
+
+.footer-section h2 {
+  font-size: 1.8rem;
+  color: #e9c46a;
+  margin-bottom: 15px;
 }
 
 .footer-section h3 {
   font-size: 1.2rem;
-  margin-bottom: 15px;
-  color: #ffd700; /* gold accent */
+  margin-bottom: 12px;
+  color: #f4a261;
 }
 
-.footer-section p,
-.footer-section a {
-  color: #f5f5f5;
-  text-decoration: none;
+.footer-section p {
   font-size: 0.95rem;
-  transition: color 0.3s ease;
+  line-height: 1.6;
+  color: #ddd;
 }
 
-.footer-section a:hover {
-  color: #ffd700;
+.footer-section ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* ===== SOCIAL ICONS ===== */
-.footer-social {
-  display: flex;
-  gap: 15px;
+.footer-section ul li {
+  margin: 8px 0;
 }
 
-.footer-social a {
-  color: #ffffff;
-  font-size: 1.3rem;
-  transition: color 0.3s ease;
+.footer-section ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.footer-social a:hover {
-  color: #ffd700;
+.footer-section ul li a:hover {
+  color: #f4a261;
+  text-shadow: 0 0 8px rgba(244, 162, 97, 0.6);
 }
 
-/* ===== COPYRIGHT ===== */
+/* Social icons */
+.socials a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #e9c46a;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #f4a261;
+  transform: scale(1.2);
+}
+
+/* Bottom section */
 .footer-bottom {
   text-align: center;
-  padding-top: 15px;
-  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
   font-size: 0.9rem;
+  color: #ccc;
 }
 
-/* ===== RESPONSIVE ===== */
+/* Responsive */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+  }
+  .socials {
+    margin-top: 10px;
   }
 }

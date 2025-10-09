@@ -153,7 +153,7 @@ const Navbar = () => {
                 <li className="nav-item">
                   <Link
                     className="nav-link nav-link-pro d-flex align-items-center text-font"
-                    to="/order-history"
+                    to="/orders"
                   >
                     <FaHistory className="me-2 icon-pro" /> Orders
                   </Link>

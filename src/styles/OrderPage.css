@@ -1,72 +1,166 @@
-@keyframes modal-fade-in {
-            from { opacity: 0; }
-            to { opacity: 1; }
-          }
-          @keyframes modal-slide-down {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-          }
-          /* Custom Modal Styles */
-          .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(5px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1050;
-            animation: modal-fade-in 0.3s forwards;
-          }
-          .modal-content-pro {
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 1rem;
-            max-width: 450px;
-            width: 90%;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            animation: modal-slide-down 0.4s forwards;
-          }
-          .modal-icon {
-            color: #DC3545;
-            font-size: 3rem;
-            margin-bottom: 1rem;
-          }
-          .modal-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1.5rem;
-          }
-          .modal-buttons .btn {
-            padding: 0.75rem 2rem;
-            font-weight: bold;
-          }
-          /* Toast Message Styles */
-          .toast-message {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            padding: 1rem 1.5rem;
-            border-radius: 0.5rem;
-            color: white;
-            z-index: 1060;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            animation: slide-in-up 0.5s ease-out forwards;
-          }
-          @keyframes slide-in-up {
-            from { transform: translateY(100px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-          }
-          .toast-message.success { background-color: #28A745; }
-          .toast-message.danger { background-color: #DC3545; }
+/* 🌟 ATTRACTIVE ORDER PAGE CSS – BOOKSTORE THEME */
 
+/* BODY STYLING */
+body {
+  background: linear-gradient(180deg, #FAF8F1, #E2EBE4); /* Soft parchment gradient */
+  font-family: 'Poppins', sans-serif;
+  color: #2F5233; /* Forest green text */
+  margin: 0;
+  padding: 0;
+}
 
+/* PAGE CONTAINER */
+.order-page {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 30px 20px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
 
+/* PAGE TITLE */
+.order-page h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2F5233;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+}
 
+.order-page h1::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  background-color: #A4BE7B;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
 
+/* ORDERS GRID */
+.order-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
 
+/* ORDER CARD */
+.order-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.order-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* BOOK IMAGE */
+.order-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid #A4BE7B;
+}
+
+/* CARD CONTENT */
+.order-card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.order-card-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2F5233;
+  margin-bottom: 8px;
+}
+
+.order-info {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* PRICE & STATUS */
+.order-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.order-price {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #4A7856;
+}
+
+.order-status {
+  background: linear-gradient(90deg, #A4BE7B, #C4DFAA);
+  color: #2F5233;
+  padding: 6px 14px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* BUTTONS */
+.order-card button {
+  margin-top: 16px;
+  width: 100%;
+  background: linear-gradient(90deg, #2F5233, #4A7856);
+  color: #FAF3E0;
+  border: none;
+  padding: 12px 0;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.order-card button:hover {
+  background: linear-gradient(90deg, #A4BE7B, #C4DFAA);
+  color: #2F5233;
+  box-shadow: 0 0 12px rgba(164, 190, 123, 0.6);
+}
+
+/* EMPTY ORDERS MESSAGE */
+.empty-orders {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 100px;
+  font-weight: 500;
+}
+
+/* FADE-IN ANIMATION */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .order-page {
+    padding: 20px;
+  }
+
+  .order-list {
+    grid-template-columns: 1fr;
+  }
+
+  .order-card img {
+    height: 200px;
+  }
+}
