@@ -1,104 +1,130 @@
-/* ---------------- NAVBAR CSS (Blue Bookstore Theme) ---------------- */
+/* ================================
+   Navbar Styles - Blue & White Theme
+   ================================ */
 
-nav {
-  background-color: #4A90E2; /* Soft Blue background */
-  color: #F0F4F8; /* Light beige/white text for contrast */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  box-shadow: 0 3px 10px rgba(199, 12, 12, 0.822);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.navbar-dark-pro {
+  background: linear-gradient(90deg, #631515, rgb(250, 164, 164), antiquewhite); /* Smooth blue gradient */
+  color: #fff;
   font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
 }
 
-nav .logo {
-  font-size: 1.8rem;
+/* Glow effect background */
+.navbar-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--x, 50%) 100%, rgba(255, 255, 255, 0.2), transparent 50%);
+  opacity: 0.6;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Brand Logo */
+.brand-link {
+  font-size: 1.4rem;
   font-weight: 700;
-  color: #F0F4F8;
-  text-transform: uppercase;
+  color: #ffffff !important;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
   letter-spacing: 1px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 35px;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a {
+.brand-link:hover {
+  color: #e3f2fd !important;
   text-decoration: none;
-  color: #F0F4F8;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  position: relative;
 }
 
-nav ul li a::after {
-  content: '';
+/* Nav Links */
+.nav-link-pro {
+  color: #540000 !important;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover underline effect */
+.nav-link-pro::after {
+  content: "";
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #2C6BA0; /* Darker Blue hover underline */
-  bottom: -4px;
   left: 0;
-  transition: 0.3s ease;
+  bottom: -4px;
+  background: #ffffff;
+  transition: width 0.3s ease-in-out;
 }
 
-nav ul li a:hover::after {
+.nav-link-pro:hover::after {
   width: 100%;
 }
 
-nav ul li a:hover {
-  color: #2C6BA0; /* Darker blue hover text */
+.nav-link-pro:hover {
+  color: #cd5151 !important;
 }
 
-/* Button style (optional for Login/Cart) */
-nav .nav-btn {
-  background-color: #2C6BA0; /* Dark Blue button */
-  color: #F0F4F8;
+/* Dropdown menu */
+.dropdown-menu-pro {
+  background: #1565c0;
+  border-radius: 10px;
   border: none;
-  padding: 8px 18px;
-  border-radius: 20px;
+  padding: 0.5rem 0;
+}
+
+.dropdown-item-pro {
+  color: #ffffff !important;
+  transition: background 0.3s ease;
+}
+
+.dropdown-item-pro:hover {
+  background: #0d47a1;
+  color: #e3f2fd !important;
+}
+
+/* Divider in dropdown */
+.dropdown-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+.nav-btn-pro {
+  font-size: 0.95rem;
   font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease;
+  border-radius: 25px;
+  padding: 6px 18px;
+  transition: all 0.3s ease-in-out;
 }
 
-nav .nav-btn:hover {
-  background-color: #F0F4F8;
-  color: #2C6BA0;
+/* Outline button */
+.btn-outline-light {
+  border: 2px solid #ffffff;
+  color: #ffffff;
 }
 
-/* Responsive Navbar */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  nav ul li {
-    width: 100%;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 10px 0;
-  }
+.btn-outline-light:hover {
+  background: #ffffff;
+  color: #0d47a1;
 }
 
-.navbar-dark-pro {
-  background-color:#4AA9A4;
+/* Primary button */
+.btn-primary {
+  background: #0d47a1;
+  border: 2px solid #ffffff;
+}
+
+.btn-primary:hover {
+  background: #1976d2;
+  border: 2px solid #e3f2fd;
+}
+
+/* Icons */
+.icon-pro {
+  color: #3f0000;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-pro:hover {
+  transform: scale(1.1);
 }
