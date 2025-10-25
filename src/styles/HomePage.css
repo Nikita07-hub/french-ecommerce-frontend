@@ -254,13 +254,13 @@
     background: linear-gradient(135deg, #FBBBBB, #FDE3E3);
   }
   25% {
-    background: linear-gradient(135deg, #FCC3C3, #FFD6D6);
+    background: linear-gradient(135deg, #58c0e0, #8aecd7);
   }
   50% {
-    background: linear-gradient(135deg, #FFD0D0, #FFE9E9);
+    background: linear-gradient(135deg, #70c2d1, #a5a6e9);
   }
   75% {
-    background: linear-gradient(135deg, #FCC3C3, #FFD6D6);
+    background: linear-gradient(135deg, #819ddb, #d498e0);
   }
   100% {
     background: linear-gradient(135deg, #FBBBBB, #FDE3E3);

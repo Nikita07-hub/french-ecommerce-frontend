@@ -302,7 +302,7 @@ const HomePage = () => {
     return (
       <div className="d-flex flex-column align-items-center justify-content-center vh-100 bg-light text-primary">
         <FaSpinner className="spinner-border mb-3" size={60} role="status" style={{ animation: 'spin 1s linear infinite' }} />
-        <p className="lead text-muted">Loading your new shopping experience...</p>
+        <p className="lead text-muted">Preparing your French bookstore experience...</p>
       </div>
     );
   }
@@ -328,15 +328,15 @@ const HomePage = () => {
         <div className="container py-5 position-relative z-index-1">
           {/* Main heading with Bootstrap classes and custom animation classes. */}
           <h1 className="display-1 fw-bold mb-4 animate__fadeInUp">
-            Find Your Style. Discover Your Story.
+            Read.Learn.Speak French with confidence.
           </h1>
           {/* A subheading with Bootstrap classes and custom animation classes. */}
           <p className="lead fw-light mt-3 mb-5 animate__fadeInUp animate__delay-1s">
-            Explore a curated collection of premium products, designed for you.
+            Explore a curated collection of French learning books for A1 and A2 levels.
           </p>
           {/* A `Link` component that navigates the user to the `/products` page when clicked. */}
           <Link to="/products" className="btn btn-light btn-lg rounded-pill shadow-lg animate__fadeInUp animate__delay-2s">
-         Start Shopping <FaArrowRight className="ms-2" />
+         Discover your first book <FaArrowRight className="ms-2" />
          </Link>
         </div>
         {/* A scroll indicator icon. */}
@@ -348,8 +348,8 @@ const HomePage = () => {
       {/* The main content area for featured products. */}
       <main className="container-fluid  py-5 main-section">
         <div className="text-center mb-5">
-          <h2 className="fw-bold mb-2 text-dark">Handpicked for You</h2>
-          <p className="lead text-muted">A showcase of our most popular and loved products.</p>
+          <h2 className="fw-bold mb-2 text-dark">Books chosen for you</h2>
+          <p className="lead text-muted">Featuring our top choice for learners.</p>
       </div>
 {/* A responsive grid layout for the product cards. */}
   <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-5 px-5">
@@ -389,9 +389,9 @@ const HomePage = () => {
       <section className="action-section text-center py-5 my-5 shadow-sm">
   <div className="container">
     <h3 className="fw-bold mb-3 text-white">Ready to find more?</h3>
-    <p className="lead mb-4 text-white">Our full catalog is waiting for you.</p>
+    <p className="lead mb-4 text-white">Our entire collection is waiting for you.</p>
     <Link to="/products" className="btn explore-btn btn-lg rounded-pill shadow-sm">
-      Explore All Products
+      Find your next French book
     </Link>
   </div>
 </section>

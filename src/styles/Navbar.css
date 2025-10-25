@@ -3,7 +3,7 @@
    ================================ */
 
 .navbar-dark-pro {
-  background: linear-gradient(90deg, #631515, rgb(250, 164, 164), antiquewhite); /* Smooth blue gradient */
+  background: linear-gradient(90deg, #94d6f5, rgb(95, 125, 165), rgb(13, 27, 39)); /* Smooth blue gradient */
   color: #fff;
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease-in-out;

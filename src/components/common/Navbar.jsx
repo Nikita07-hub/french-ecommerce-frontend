@@ -122,7 +122,7 @@ const Navbar = () => {
 
         {/* Brand/Logo → navigates to home page ("/Home"). */}
         <Link className="navbar-brand fw-bold brand-link text-font" to="/home">
-          Flexta_Fashion_Hub
+          Bonjourlearn
         </Link>
 
         {/* Button for mobile toggle (hamburger menu).
