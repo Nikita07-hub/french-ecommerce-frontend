@@ -2,7 +2,7 @@
    Global Login Page Styles
 =============================== */
 .login-page-container {
-    background: url('https://static.vecteezy.com/system/resources/previews/005/263/696/non_2x/e-learning-concept-isometric-mobile-or-smartphone-pencil-book-and-cloud-computing-for-study-on-green-and-white-background-online-study-from-home-online-course-e-book-store-free-vector.jpg') no-repeat center center;
+    background: #FAF3E0 no-repeat center center;
     background-size: cover;
     background-attachment: fixed; /* Makes the background stay fixed */
     position: relative;
